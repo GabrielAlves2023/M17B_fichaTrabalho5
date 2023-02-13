@@ -1,5 +1,10 @@
 package psi_11_o.m17b_fichatrabalho5;
 
+/**
+ * @author Gabriel Alves
+ * @version 1.0.1
+ */
+
 public class Main {
 
     public static void main(String[] args) {
