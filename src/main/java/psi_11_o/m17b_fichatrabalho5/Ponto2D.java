@@ -1,9 +1,5 @@
 package psi_11_o.m17b_fichatrabalho5;
 
-/**
- * @author Gabriel Alves
- * @version 1.0.1
- */
 public class Ponto2D {
     private int x;
     private int y;
@@ -18,40 +14,12 @@ public class Ponto2D {
         this.y = y;        
     }
     
-    /**
-     * @return the x
-     */
-    public int getX() {
-        return x;
-    }
-
-    /**
-     * @param x the x to set
-     */
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    /**
-     * @return the y
-     */
-    public int getY() {
-        return y;
-    }
-
-    /**
-     * @param y the y to set
-     */
-    public void setY(int y) {
-        this.y = y;
-    }
-    
     public double distancia(Ponto2D a){
-        return Math.abs(Math.sqrt(Math.pow((getX()-a.getX()),2)+Math.pow((getY()-a.getY()),2)));
+        return Math.abs(Math.sqrt(Math.pow((x-a.x),2)+Math.pow((y-a.y),2)));
     }
 
     @Override
     public String toString() {
-        return "Ponto2D[" + getX() + "," + getY() + "]";
-    } 
+        return "Ponto2D[" + x + "," + y + "]";
+    }    
 }
